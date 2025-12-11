@@ -1,0 +1,225 @@
+:root {
+  --maroon: #4b0c22;
+  --maroon-text: #f7f2e9;
+  --button: #7c4a12;
+  --button-hover: #8f5717;
+  --gold: #d6a24d;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "GE SS Two", "Cairo", "Inter", sans-serif;
+  background-color: var(--maroon);
+  color: var(--maroon-text);
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 20px 40px;
+  gap: 28px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.brand-en {
+  margin: 8px 0 0;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.brand-ar {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.pill-nav {
+  width: 100%;
+  max-width: 720px;
+  background: var(--button);
+  border-radius: 12px;
+  display: flex;
+  gap: 8px;
+  padding: 14px 22px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.pill-link {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: var(--maroon-text);
+}
+
+.actions {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.action-btn {
+  width: 100%;
+  background: var(--button);
+  color: var(--maroon-text);
+  border: none;
+  border-radius: 12px;
+  padding: 26px 20px;
+  font-size: 22px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.action-btn:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+.footer {
+  width: 100%;
+}
+
+.top-bar {
+  background: var(--gold);
+  color: #2f1303;
+  padding: 14px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.top-bar-ar {
+  font-family: "GE SS Two", "Cairo", "Inter", sans-serif;
+}
+
+.contact-bar {
+  background: var(--white);
+  color: var(--maroon);
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  font-weight: 700;
+}
+
+.contact-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--maroon);
+  font-size: 18px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icon-circle:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+.icon-circle.whatsapp {
+  color: #25d366;
+  border-color: #25d366;
+}
+
+.icon-circle.phone {
+  color: var(--maroon);
+}
+
+.phone-number {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 640px) {
+  .logo {
+    width: 100px;
+  }
+
+  .brand-en {
+    font-size: 26px;
+  }
+
+  .brand-ar {
+    font-size: 24px;
+  }
+
+  .pill-nav {
+    flex-direction: column;
+    padding: 14px 16px;
+  }
+
+  .pill-link {
+    letter-spacing: 2px;
+    padding: 6px 0;
+    font-size: 17px;
+  }
+
+  .action-btn {
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 22px 16px;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .contact-bar {
+    flex-direction: column;
+  }
+
+  .phone-number {
+    font-size: 20px;
+  }
+}
+
